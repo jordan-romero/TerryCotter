@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Terry_Cotter_and_the_Enchanter_s_Pebble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fQk-Ei-VSv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="glf-w1-76g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-R7-Zkd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-rn-JZ7">
+                                        <rect key="frame" x="0.0" y="648" width="414" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCh-9A-iht">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                                <state key="normal" title="Button" backgroundImage="choice1Background"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu3-NL-kkG">
+                                                <rect key="frame" x="0.0" y="95" width="414" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="TAA-jt-dDO"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" backgroundImage="choice2Background"/>
+                                            </button>
+                                        </subviews>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="fQk-Ei-VSv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2eW-SR-edk"/>
+                            <constraint firstItem="fQk-Ei-VSv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P5q-4P-eaF"/>
+                            <constraint firstItem="fQk-Ei-VSv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="QWp-C0-p9q"/>
+                            <constraint firstAttribute="bottom" secondItem="fQk-Ei-VSv" secondAttribute="bottom" id="TJx-eG-zGp"/>
+                            <constraint firstItem="glf-w1-76g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VPV-7G-fgL"/>
+                            <constraint firstItem="glf-w1-76g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XG3-j0-wS7"/>
+                            <constraint firstItem="glf-w1-76g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ajl-XI-6Qc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="glf-w1-76g" secondAttribute="bottom" id="iZm-bW-PHa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="153" height="285.5"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
