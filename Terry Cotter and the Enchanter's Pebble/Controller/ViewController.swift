@@ -19,9 +19,9 @@ class ViewController: UIViewController {
               choice1: "Join Luffelpoof",
               choice2: "Join RrifanClaw"
         ),
-        Story(title: "You see a tiger.", choice1: "Shout for help.", choice2: "Play dead."
+        Story(title: "Thank you for joining Luffelpoof, but you're late for class.", choice1: "Run to class.", choice2: "Scoff and continue walking to class."
         ),
-        Story(title: "You find a treasure chest.", choice1: "Open it.", choice2: "Check for traps."
+        Story(title: "Thank you for joining RrifanClaw, excellent choice, choose a sweet.", choice1: "Chocolate Toad", choice2: "Sugar Pens."
         ),
     ]
     
