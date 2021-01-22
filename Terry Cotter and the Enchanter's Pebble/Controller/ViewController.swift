@@ -37,6 +37,22 @@ class ViewController: UIViewController {
 
     @IBAction func choiceMade(_ sender: UIButton) {
         let userChoice = sender.currentTitle!
+        
+        let currentStory = stories[storyNumber]
+        
+        if userChoice == currentStory.choice1 {
+            storyNumber = 1
+        } else if userChoice == currentStory.choice2 {
+            storyNumber = 2
+        }
+        
+        updateUI()
+    }
+    
+    func updateUI() {
+        storyLabel.text = stories[storyNumber].title
+        choice1Button.setTitle(stories[storyNumber].choice1, for: .normal)
+        choice2Button.setTitle(stories[storyNumber].choice2, for: .normal)
     }
     
 }
