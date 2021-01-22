@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    var storyNumber = 0
+    
     
     let stories = [
         Story(title: "Welcome Terry Cotter",
@@ -33,6 +35,9 @@ class ViewController: UIViewController {
         choice2Button.setTitle(stories[0].choice2, for: .normal)
     }
 
-
+    @IBAction func choiceMade(_ sender: UIButton) {
+        let userChoice = sender.currentTitle!
+    }
+    
 }
 
