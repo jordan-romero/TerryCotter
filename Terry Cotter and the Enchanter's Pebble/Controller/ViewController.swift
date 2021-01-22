@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        storyLabel.text = stories[0].title
-        choice1Button.setTitle(stories[0].choice1, for: .normal)
-        choice2Button.setTitle(stories[0].choice2, for: .normal)
+        updateUI()
     }
 
     @IBAction func choiceMade(_ sender: UIButton) {
@@ -30,9 +28,9 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        storyLabel.text = stories[storyNumber].title
-        choice1Button.setTitle(stories[storyNumber].choice1, for: .normal)
-        choice2Button.setTitle(stories[storyNumber].choice2, for: .normal)
+        storyLabel.text = storyBrain.getStoryTitle()
+        choice1Button.setTitle(storyBrain.getChoice1(), for: .normal)
+        choice2Button.setTitle(storyBrain.getChoice2(), for: .normal)
     }
     
 }
